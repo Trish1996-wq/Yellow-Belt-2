@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@600&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <title>Just Desserts</title>
+</head>
+<body>
+<div class="main">
+    <div class="container">
+        <div class="row top">
+            <div class="banner">
+                <h1 class="title">Just <span>Desserts</span></h1>
+                <div class="button">
+                <button id="join" onclick="login(this)">Join</button>
+                <button id="login">Login</button>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="search-box">
+                    <form action="">
+                        <input type="text" id="search" name = "search" class="input" placeholder="Search" onchange="find(this)"> 
+                        <button id="go">Go</button>
+                    </form>
+                </div>
+                <div class="links">
+                    <div class="recepie">
+                        <img src="/imgs/cake.png" alt="cake-profle">
+                        <a href="">Cake</a>
+                    </div>
+                    <div class="recepie">
+                        <img src="/imgs/cookie.png" alt="cookie-profle">
+                        <a href="">Cookie</a>
+                    </div>
+                    <div class="recepie">
+                        <img src="/imgs/ice-cream.png" alt="icecream-profle">
+                        <a href="">Ice Cream</a>
+                    </div>
+                    <div class="recepie">
+                        <img src="/imgs/pie.png" alt="pie-profle">
+                        <a href="">Pie</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bottom">
+            <div class="col1">
+                <h1><a href="">Recepie of The Day</a></h1>
+                <div class="card">
+                    <div id="main-recepie">
+                        <img id="selected-recepie" src="/imgs/orange-tart.jpg" alt="tart-profile">
+                    </div>
+                    <div class="recepie-label">
+                    <div class="label">
+                        <h2>Organe Tea Jelly Tart</h2>
+                        <h2>by:<span><a href="">yuripiano</a></span></h2>
+                        </div>
+                    <div class="likes">
+                            <img onclick="addLike(0)" 
+                            src="/imgs/heart.png" alt="like-img">
+                            <div class="like-num">
+                                <h2 id ="heart1">68</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p><a href="">See Full Recepie</a></p>
+            </div>
+        <div class="col2">
+                <h3>Recommended For You</h3>
+                <div class="card">
+                    <div class="image">
+                        <img src="/imgs/macarons.jpg" alt="macarons-profile">
+                    </div>
+                    <div class="recepie-label">
+                        <div class="label">
+                            <h2>Macarons</h2>
+                            <h2>by:<span><a href="">EmilieW</a></span></h2>
+                        </div>
+                        <div class="likes">
+                            <img onclick="addLike(1)"  src="/imgs/heart.png" alt="like-img">
+                            <div class="like-num">
+                                <h2 id="heart2">212</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="/imgs/creme-brulee.jpg" alt="creme-profile">
+                    </div>
+                    <div class="recepie-label">
+                        <div class="label">
+                            <h2>Creme Brulee</h2>
+                            <h2>by:<span><a href="">MarisaG</a></span></h2>
+                        </div>
+                        <div class="likes">
+                            <img onclick="addLike(2)"  src="/imgs/heart.png" alt="like-img">
+                            <div class="like-num">
+                                <h2 id="heart3">33</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+<script src="/script.js"></script>
+</body>
+</html>
